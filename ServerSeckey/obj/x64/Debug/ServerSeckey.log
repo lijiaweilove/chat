@@ -1,0 +1,21 @@
+﻿  正在验证源
+  正在远程复制源
+  正在启动远程生成
+  正在编译源:
+  ServerOP.cpp
+D:\study\Porjects\Visual Studio Projects\ServerSeckey\ServerOP.cpp(30,24): warning : implicit conversion loses integer precision: 'Json::Value::Int' (aka 'int') to 'unsigned short' [-Wimplicit-int-conversion]
+D:\study\Porjects\Visual Studio Projects\ServerSeckey\ServerOP.cpp(30,24): warning :         m_port = root["port"].asInt();
+D:\study\Porjects\Visual Studio Projects\ServerSeckey\ServerOP.cpp(30,24): warning :                ~ ~~~~~~~~~~~~~^~~~~~~
+D:\study\Porjects\Visual Studio Projects\ServerSeckey\ServerOP.cpp(51,10): warning : code will never be executed [-Wunreachable-code]
+D:\study\Porjects\Visual Studio Projects\ServerSeckey\ServerOP.cpp(51,10): warning :         m_server->closefd();
+D:\study\Porjects\Visual Studio Projects\ServerSeckey\ServerOP.cpp(51,10): warning :                 ^~
+D:\study\Porjects\Visual Studio Projects\ServerSeckey\ServerOP.cpp(134,14): warning : ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+D:\study\Porjects\Visual Studio Projects\ServerSeckey\ServerOP.cpp(150,25): warning : implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+D:\study\Porjects\Visual Studio Projects\ServerSeckey\ServerOP.cpp(150,25): warning :                         retStr.append(1, buf[rand() % strlen(buf)]);
+D:\study\Porjects\Visual Studio Projects\ServerSeckey\ServerOP.cpp(150,25): warning :                                              ^~~~~~ ~
+D:\study\Porjects\Visual Studio Projects\ServerSeckey\ServerOP.cpp(132,8): warning : implicit conversion loses integer precision: 'time_t' (aka 'long') to 'unsigned int' [-Wshorten-64-to-32]
+D:\study\Porjects\Visual Studio Projects\ServerSeckey\ServerOP.cpp(132,8): warning :         srand(time(NULL));      // 以当前时间为种子,防止会生成重复的随机数
+D:\study\Porjects\Visual Studio Projects\ServerSeckey\ServerOP.cpp(132,8): warning :         ~~~~~ ^~~~~~~~~~
+D:\study\Porjects\Visual Studio Projects\ServerSeckey\ServerOP.cpp(132,8): warning : 5 warnings generated.
+  正在链接对象
+  ServerSeckey.vcxproj -> .\ServerSeckey

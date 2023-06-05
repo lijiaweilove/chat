@@ -1,0 +1,43 @@
+﻿  正在验证源
+  正在远程复制源
+  正在启动远程生成
+  正在编译源:
+  clientOP.cpp
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.cpp(28,29): warning : implicit conversion loses integer precision: 'Json::Value::Int' (aka 'int') to 'unsigned short' [-Wimplicit-int-conversion]
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.cpp(28,29): warning :         m_info.port = root["port"].asInt();
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.cpp(28,29): warning :                     ~ ~~~~~~~~~~~~~^~~~~~~
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.cpp(94,1): warning : non-void function does not return a value [-Wreturn-type]
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.cpp(94,1): warning : }
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.cpp(94,1): warning : ^
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.cpp(100,1): warning : non-void function does not return a value [-Wreturn-type]
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.cpp(100,1): warning : }
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.cpp(100,1): warning : ^
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.cpp(100,1): warning : 3 warnings generated.
+  RsaCrypto.cpp
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(65,36): warning : implicit conversion loses integer precision: 'std::basic_string<char>::size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(65,36): warning :         int len = RSA_public_encrypt(text.size(), (const unsigned char*)text.data(),
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(65,36): warning :                   ~~~~~~~~~~~~~~~~~~ ~~~~~^~~~~~
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(89,46): warning : implicit conversion loses integer precision: 'std::basic_string<char>::size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(89,46): warning :         BIO* bmem = BIO_new_mem_buf(str.data(), str.size());
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(89,46): warning :                     ~~~~~~~~~~~~~~~             ~~~~^~~~~~
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(92,25): warning : implicit conversion loses integer precision: 'std::basic_string<char>::size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(92,25): warning :         BIO_read(b64, buf, str.size());
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(92,25): warning :         ~~~~~~~~           ~~~~^~~~~~
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(107,34): warning : implicit conversion changes signedness: 'int' to 'std::basic_string<char>::size_type' (aka 'unsigned long') [-Wsign-conversion]
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(107,34): warning :         if (len >= 0) res = string(buf, len);
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(107,34): warning :                             ~~~~~~      ^~~
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(118,29): warning : implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(118,29): warning :         string res = toBase64(out, outLen);
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(118,29): warning :                      ~~~~~~~~      ^~~~~~
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(117,57): warning : implicit conversion loses integer precision: 'std::basic_string<char>::size_type' (aka 'unsigned long') to 'unsigned int' [-Wshorten-64-to-32]
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(117,57): warning :         RSA_sign(type, (const unsigned char*)text.data(), text.size(), (unsigned char*)out, &outLen, priKey);
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(117,57): warning :         ~~~~~~~~                                          ~~~~~^~~~~~
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(128,25): warning : implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(128,25): warning :                 (unsigned char*)sign, kenLen, pubKey) == -1)
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(128,25): warning :                                       ^~~~~~
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(127,63): warning : implicit conversion loses integer precision: 'std::basic_string<char>::size_type' (aka 'unsigned long') to 'unsigned int' [-Wshorten-64-to-32]
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(127,63): warning :         if (RSA_verify(type, (const unsigned char*)text.data(), text.size(),
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(127,63): warning :             ~~~~~~~~~~                                          ~~~~~^~~~~~
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp(127,63): warning : 8 warnings generated.
+  正在链接对象
+  Project 1 Code.vcxproj -> .\ClientSeckey

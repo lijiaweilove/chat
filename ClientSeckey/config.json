@@ -1,0 +1,7 @@
+//  从本地json文件获取的数据
+{
+  "clientID": "lee",
+  "serverID": "server",
+  "ip": "172.17.224.215",
+  "port": 9999
+}
