@@ -15,6 +15,8 @@
 #include <unistd.h>
 #include <iostream>
 #include "RespondCodec.h"
+#include "SeckeyNodeInfo.h"
+
 using namespace std;
 using namespace Json;
 //监听, 提取(多线程 + io多路), 反序列化数据, 判断和验证, 序列化数据, 
@@ -29,10 +31,22 @@ ServerOP::ServerOP(string jsonFile)
 	read.parse(ifs, root);
 	m_port = root["port"].asInt();
 	m_serverID = root["serverID"].asString();
+	//数据库相关信息
+	m_user = root["user"].asString();
+	m_passwd = root["passwd"].asString();
+	m_connStr = root["connStr"].asString();
+	string ShmKey = root["ShmKey"].asString();
+	int shmMaxNode = root["ShmMaxNode"].asInt();
+	//连接数据库
+	m_occi.connectDB(m_user, m_passwd, m_connStr);
+	m_shm = new SeckeyShm(ShmKey, shmMaxNode);
+	m_shm->shmInit();
 }
 
 ServerOP::~ServerOP()
 {
+	m_occi.closeDB();
+	delete m_shm;
 }
 
 bool ServerOP::startServer()
@@ -104,11 +118,27 @@ string ServerOP::seckeyAgree(RequestMsg* Msg)
 		cout << "签名校验成功......" << endl;
 		respInfo.status = true;
 		string randStr = getRandStr(Len16);
+		//将秘钥保存到共享内存中
+		SeckeyNodeInfo* pNode = new SeckeyNodeInfo;
+		strcpy(pNode->clientID, Msg->clientid().data());
+		strcpy(pNode->serverID, m_serverID.data());
+		strcpy(pNode->seckey, randStr.data());
+		pNode->seckeyID = m_occi.getKeyID();
+		pNode->status = 1;
 		string secKey = rsa.encryptByPublicKey(randStr);  //加密成二进制数据,会存在不可见的/0.导致read结束
 		respInfo.data = secKey;  //生成对称加密的公钥并使用非对称加密的公钥加密
 		respInfo.serverId = m_serverID;
 		respInfo.clientId = Msg->clientid();
-		respInfo.sekeyId = 1;
+		respInfo.sekeyId = pNode->seckeyID;
+		//写入数据库
+		bool flag = m_occi.writeSecKey(pNode);
+		if (flag) {
+			m_occi.updataKeyID(pNode->seckeyID + 1);
+			m_shm->shmWrite(pNode);
+		}else {
+			respInfo.status = false;
+		}
+		delete pNode;
 	}
 	std::unique_ptr<CodecFactory> fa(new RespondFactory(&respInfo));
 	//  使用数据和工厂类创建服务器编解码对象

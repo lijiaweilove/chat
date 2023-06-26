@@ -1,7 +1,8 @@
-D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.cpp|638207211289966007|~/projects/ClientSeckey|
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\BaseShm.cpp|638215791646829641|~/projects/ClientSeckey|
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.cpp|638233183995108926|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\Codec.cpp|638172748204571995|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\CodecFactory.cpp|638172763948440243|~/projects/ClientSeckey|
-D:\study\Porjects\Visual Studio Projects\ClientSeckey\main.cpp|638194884636969596|~/projects/ClientSeckey|
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\main.cpp|638218553454142327|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\Message.pb.cc|638173592816427021|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\MyHsah.cpp|638169144475318682|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\RepondFactory.cpp|638172774944471459|~/projects/ClientSeckey|
@@ -9,10 +10,12 @@ D:\study\Porjects\Visual Studio Projects\ClientSeckey\ResquestCodec.cpp|63817275
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\RequestFactory.cpp|638172772092670181|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\RespondCodec.cpp|638173307319364629|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp|638207192380265148|~/projects/ClientSeckey|
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\SeckeyShm.cpp|638233192304692775|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\ServerOP.cpp|638201098075933329|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\TcpServer.cpp|638173644383770988|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\TcpSocket.cpp|638207171347408883|~/projects/ClientSeckey|
-D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.h|638178470562789915|~/projects/ClientSeckey|
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\BaseShm.h|638215869532244657|~/projects/ClientSeckey|
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.h|638233075997600454|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\Codec.h|638172779778769002|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\CodecFactory.h|638172779959028072|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\Message.pb.h|638173591402491267|~/projects/ClientSeckey|
@@ -22,8 +25,10 @@ D:\study\Porjects\Visual Studio Projects\ClientSeckey\RequestCodec.h|63817277865
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\RequestFactory.h|638172779187287606|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\RespondCodec.h|638207131384242177|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.h|638207106914702257|~/projects/ClientSeckey|
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\SeckeyNodeInfo.h|638215938575937339|~/projects/ClientSeckey|
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\SeckeyShm.h|638215869532154669|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\ServerOP.h|638179713883683598|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\TcpServer.h|638173644407957625|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\TcpSocket.h|638201101966989317|~/projects/ClientSeckey|
-D:\study\Porjects\Visual Studio Projects\ClientSeckey\config.json|638201056960434358|~/projects/ClientSeckey|
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\config.json|638233183969796904|~/projects/ClientSeckey|
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\Message.proto|638173306809200094|~/projects/ClientSeckey|

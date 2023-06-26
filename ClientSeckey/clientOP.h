@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "SeckeyShm.h"
 
 struct clientInfo
 {
@@ -9,17 +10,18 @@ struct clientInfo
 	unsigned short port;
 };
 
-// 客户端类
+// 瀹㈡埛绔被
 enum handle{Agree,Check,Cancel};
 class clientOP
 {
 private:
 	clientInfo m_info;
+	SeckeyShm *m_shm;
 public:
-	//  获取本地json文件配置
+	//  鑾峰彇鏈湴json鏂囦欢閰嶇疆
 	clientOP(std::string jsonFile = "config.json");
 	~clientOP();
-	//秘钥协商,校验,注销
+	//绉橀挜鍗忓晢,鏍￠獙,娉ㄩ攢
 	bool seckeyAgree();
 	bool seckeyCheck();
 	bool seckeyCancel();

@@ -1,6 +1,7 @@
-D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.cpp|/home/lee/projects/ClientSeckey/clientOP.cpp
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\BaseShm.cpp|/home/lee/projects/ClientSeckey/BaseShm.cpp
 D:\study\Porjects\Visual Studio Projects\ClientSeckey|/home/lee/projects/ClientSeckey
 @D:\study\Porjects\Visual Studio Projects\ClientSeckey|@/home/lee/projects/ClientSeckey
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.cpp|/home/lee/projects/ClientSeckey/clientOP.cpp
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\Codec.cpp|/home/lee/projects/ClientSeckey/Codec.cpp
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\CodecFactory.cpp|/home/lee/projects/ClientSeckey/CodecFactory.cpp
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\main.cpp|/home/lee/projects/ClientSeckey/main.cpp
@@ -11,9 +12,11 @@ D:\study\Porjects\Visual Studio Projects\ClientSeckey\ResquestCodec.cpp|/home/le
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\RequestFactory.cpp|/home/lee/projects/ClientSeckey/RequestFactory.cpp
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\RespondCodec.cpp|/home/lee/projects/ClientSeckey/RespondCodec.cpp
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.cpp|/home/lee/projects/ClientSeckey/RsaCrypto.cpp
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\SeckeyShm.cpp|/home/lee/projects/ClientSeckey/SeckeyShm.cpp
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\ServerOP.cpp|/home/lee/projects/ClientSeckey/ServerOP.cpp
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\TcpServer.cpp|/home/lee/projects/ClientSeckey/TcpServer.cpp
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\TcpSocket.cpp|/home/lee/projects/ClientSeckey/TcpSocket.cpp
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\BaseShm.h|/home/lee/projects/ClientSeckey/BaseShm.h
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\clientOP.h|/home/lee/projects/ClientSeckey/clientOP.h
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\Codec.h|/home/lee/projects/ClientSeckey/Codec.h
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\CodecFactory.h|/home/lee/projects/ClientSeckey/CodecFactory.h
@@ -24,6 +27,8 @@ D:\study\Porjects\Visual Studio Projects\ClientSeckey\RequestCodec.h|/home/lee/p
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\RequestFactory.h|/home/lee/projects/ClientSeckey/RequestFactory.h
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\RespondCodec.h|/home/lee/projects/ClientSeckey/RespondCodec.h
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\RsaCrypto.h|/home/lee/projects/ClientSeckey/RsaCrypto.h
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\SeckeyNodeInfo.h|/home/lee/projects/ClientSeckey/SeckeyNodeInfo.h
+D:\study\Porjects\Visual Studio Projects\ClientSeckey\SeckeyShm.h|/home/lee/projects/ClientSeckey/SeckeyShm.h
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\ServerOP.h|/home/lee/projects/ClientSeckey/ServerOP.h
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\TcpServer.h|/home/lee/projects/ClientSeckey/TcpServer.h
 D:\study\Porjects\Visual Studio Projects\ClientSeckey\TcpSocket.h|/home/lee/projects/ClientSeckey/TcpSocket.h

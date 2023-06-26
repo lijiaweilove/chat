@@ -78,34 +78,43 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>.\</OutDir>
     <TargetExt />
+    <IncludePath>D:\study\C++Library\mysql-connector-c++\include\jdbc;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="BaseShm.cpp" />
     <ClCompile Include="clientOP.cpp" />
     <ClCompile Include="Codec.cpp" />
     <ClCompile Include="CodecFactory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Message.pb.cc" />
     <ClCompile Include="MyHsah.cpp" />
+    <ClCompile Include="mysql.cpp" />
+    <ClCompile Include="OCCIOP.cpp" />
     <ClCompile Include="RepondFactory.cpp" />
     <ClCompile Include="RequestFactory.cpp" />
     <ClCompile Include="RespondCodec.cpp" />
     <ClCompile Include="ResquestCodec.cpp" />
     <ClCompile Include="RsaCrypto.cpp" />
+    <ClCompile Include="SeckeyShm.cpp" />
     <ClCompile Include="ServerOP.cpp" />
     <ClCompile Include="TcpServer.cpp" />
     <ClCompile Include="TcpSocket.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BaseShm.h" />
     <ClInclude Include="clientOP.h" />
     <ClInclude Include="Codec.h" />
     <ClInclude Include="CodecFactory.h" />
     <ClInclude Include="Message.pb.h" />
     <ClInclude Include="MyHsah.h" />
+    <ClInclude Include="OCCIOP.h" />
     <ClInclude Include="RequestCodec.h" />
     <ClInclude Include="RequestFactory.h" />
     <ClInclude Include="RespondCodec.h" />
     <ClInclude Include="RespondFactory.h" />
     <ClInclude Include="RsaCrypto.h" />
+    <ClInclude Include="SeckeyNodeInfo.h" />
+    <ClInclude Include="SeckeyShm.h" />
     <ClInclude Include="ServerOP.h" />
     <ClInclude Include="TcpServer.h" />
     <ClInclude Include="TcpSocket.h" />
@@ -116,7 +125,7 @@
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Link>
-      <LibraryDependencies>jsoncpp;crypto;protobuf;pthread;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>jsoncpp;crypto;protobuf;pthread;mysqlcppconn;%(LibraryDependencies)</LibraryDependencies>
     </Link>
     <ClCompile>
       <CppLanguageStandard>gnu++11</CppLanguageStandard>

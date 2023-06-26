@@ -81,8 +81,10 @@
     <TargetExt>
     </TargetExt>
     <OutDir>.\</OutDir>
+    <IncludePath>D:\study\C++Library\mysql-connector-c++\include\jdbc;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="BaseShm.cpp" />
     <ClCompile Include="clientOP.cpp" />
     <ClCompile Include="Codec.cpp" />
     <ClCompile Include="CodecFactory.cpp" />
@@ -94,11 +96,13 @@
     <ClCompile Include="RequestFactory.cpp" />
     <ClCompile Include="RespondCodec.cpp" />
     <ClCompile Include="RsaCrypto.cpp" />
+    <ClCompile Include="SeckeyShm.cpp" />
     <ClCompile Include="ServerOP.cpp" />
     <ClCompile Include="TcpServer.cpp" />
     <ClCompile Include="TcpSocket.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BaseShm.h" />
     <ClInclude Include="clientOP.h" />
     <ClInclude Include="Codec.h" />
     <ClInclude Include="CodecFactory.h" />
@@ -109,6 +113,8 @@
     <ClInclude Include="RequestFactory.h" />
     <ClInclude Include="RespondCodec.h" />
     <ClInclude Include="RsaCrypto.h" />
+    <ClInclude Include="SeckeyNodeInfo.h" />
+    <ClInclude Include="SeckeyShm.h" />
     <ClInclude Include="ServerOP.h" />
     <ClInclude Include="TcpServer.h" />
     <ClInclude Include="TcpSocket.h" />
@@ -119,7 +125,7 @@
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Link>
-      <LibraryDependencies>jsoncpp;crypto;protobuf;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>jsoncpp;crypto;protobuf;mysqlcppconn;%(LibraryDependencies)</LibraryDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <ClCompile>

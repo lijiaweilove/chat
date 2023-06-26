@@ -11,6 +11,7 @@
 #include "TcpSocket.h"
 #include "MyHsah.h"
 #include "MyHsah.h"
+#include "SeckeyNodeInfo.h"
 using namespace Json;
 using namespace std;
 
@@ -26,10 +27,15 @@ clientOP::clientOP(string jsonFile)
 	m_info.serverID = root["serverID"].asString();
 	m_info.ip = root["ip"].asString();
 	m_info.port = root["port"].asInt();
+	string ShmKey = root["ShmKey"].asString();
+	//实例化共享内存对象,可以使用配置文件进行读取
+	m_shm = new SeckeyShm(ShmKey, 1);
+	m_shm->shmInit();
 }
 
 clientOP::~clientOP()
 {
+	delete m_shm;
 }
 
 //  秘钥协商
@@ -66,7 +72,7 @@ bool clientOP::seckeyAgree()
 	cout << "连接服务器成功..." << endl;
 	if (tcp->sendMsg(encStr) != 0) return false;
 	//等待服务器回复,并解码服务器数据
-	string out = tcp->recvMsg();  // 没收到数据
+	string out = tcp->recvMsg();  
 	CodecFactory* fa = new RespondFactory(out);
 	Codec* req = fa->createCodec();
 	RespondMsg* msg = (RespondMsg*)req->decodeMsg();  // 成员变量
@@ -76,10 +82,19 @@ bool clientOP::seckeyAgree()
 	}
 	//解密 私钥是rsa的成员变量
 	string key = rsa.decryptByPrivateKey(msg->data());
+	//将秘钥保存到共享内存中
+	SeckeyNodeInfo* pNode = new SeckeyNodeInfo;
+	strcpy(pNode->clientID, msg->clientid().data());
+	strcpy(pNode->serverID, msg->serverid().data());
+	strcpy(pNode->seckey,key.data());
+	pNode->seckeyID = 1;
+	pNode->status = 1;
+	m_shm->shmWrite(pNode);
 	cout << "对称加密秘钥:" << key << endl;
 	//释放资源
 	delete fa;
 	delete req;
+	delete pNode;
 	//  这是一个短连接
 	tcp->disConnect();
 	delete tcp;

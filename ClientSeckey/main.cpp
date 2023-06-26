@@ -15,7 +15,6 @@ int usage() {
     return nSel;
 }
 
-
 int main()
 {
     clientOP client;

@@ -1,7 +1,8 @@
 //  从本地json文件获取的数据
 {
-  "clientID": "lee",
-  "serverID": "server",
+  "clientID": "1234",
+  "serverID": "6789",
   "ip": "172.17.224.215",
-  "port": 9999
+  "port": 9999,
+  "ShmKey": "/usr/lib"
 }

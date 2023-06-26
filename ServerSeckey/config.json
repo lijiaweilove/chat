@@ -1,4 +1,9 @@
 {
-  "serverID": "server",
-  "port": 9999
+  "serverID": "6789",
+  "port": 9999,
+  "user": "root",
+  "passwd": "981213",
+  "connStr": "tcp://172.17.224.215:3306/mydb",
+  "ShmKey": "/usr/local",
+  "ShmMaxNode": 100
 }
