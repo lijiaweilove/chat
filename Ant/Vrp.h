@@ -15,6 +15,8 @@ public:
 	Vrp();
 	~Vrp();
     void search_path();
-    void update_pheromone_gragh();
+    void update_pheromone_gragh(std::shared_ptr<Ant> ant);
+private:
+    void allocate_segment();
 };
 

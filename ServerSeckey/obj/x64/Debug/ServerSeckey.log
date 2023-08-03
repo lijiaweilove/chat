@@ -2,17 +2,6 @@
   正在远程复制源
   正在启动远程生成
   正在编译源:
-  SeckeyShm.cpp
-D:\study\Porjects\Visual Studio Projects\ServerSeckey\SeckeyShm.cpp(4,66): warning : implicit conversion changes signedness: 'unsigned long' to 'int' [-Wsign-conversion]
-D:\study\Porjects\Visual Studio Projects\ServerSeckey\SeckeyShm.cpp(4,58): warning : implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
-D:\study\Porjects\Visual Studio Projects\ServerSeckey\SeckeyShm.cpp(8,76): warning : implicit conversion changes signedness: 'unsigned long' to 'int' [-Wsign-conversion]
-D:\study\Porjects\Visual Studio Projects\ServerSeckey\SeckeyShm.cpp(8,68): warning : implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
-D:\study\Porjects\Visual Studio Projects\ServerSeckey\SeckeyShm.cpp(37,38): warning : argument to 'sizeof' in 'memcpy' call is the same pointer type 'SeckeyNodeInfo *' as the destination; expected 'SeckeyNodeInfo' or an explicit length [-Wsizeof-pointer-memaccess]
-D:\study\Porjects\Visual Studio Projects\ServerSeckey\SeckeyShm.cpp(37,38): warning :             memcpy(pNode, pNodeInfo, sizeof(pNodeInfo));
-D:\study\Porjects\Visual Studio Projects\ServerSeckey\SeckeyShm.cpp(37,38): warning :                    ~~~~~             ^~~~~~~~~~~~~~~~~
-D:\study\Porjects\Visual Studio Projects\ServerSeckey\SeckeyShm.cpp(50,38): warning : argument to 'sizeof' in 'memcpy' call is the same pointer type 'SeckeyNodeInfo *' as the destination; expected 'SeckeyNodeInfo' or an explicit length [-Wsizeof-pointer-memaccess]
-D:\study\Porjects\Visual Studio Projects\ServerSeckey\SeckeyShm.cpp(50,38): warning :             memcpy(pNode, pNodeInfo, sizeof(pNodeInfo));
-D:\study\Porjects\Visual Studio Projects\ServerSeckey\SeckeyShm.cpp(50,38): warning :                    ~~~~~             ^~~~~~~~~~~~~~~~~
-D:\study\Porjects\Visual Studio Projects\ServerSeckey\SeckeyShm.cpp(50,38): warning : 6 warnings generated.
+  main.cpp
   正在链接对象
   ServerSeckey.vcxproj -> .\ServerSeckey

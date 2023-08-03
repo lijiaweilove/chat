@@ -15,9 +15,9 @@ SeckeyShm::~SeckeyShm()
 
 void SeckeyShm::shmInit()
 {
-    if (m_shmAddr != NULL) {
-        memset(m_shmAddr, 0, sizeof(SeckeyNodeInfo));
-    }
+    //if (m_shmAddr != NULL) {
+    //    memset(m_shmAddr, 0, sizeof(SeckeyNodeInfo));
+    //}
 }
 
 int SeckeyShm::shmWrite(SeckeyNodeInfo* pNodeInfo)

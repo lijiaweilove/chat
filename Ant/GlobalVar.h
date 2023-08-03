@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <unordered_set>
 using std::vector;
 
 //ALPHA:信息启发因子，值越大，则蚂蚁选择之前走过的路径可能性就越大
@@ -9,16 +10,22 @@ using std::vector;
 //RH0 : 挥发率
 //Q : 每条路径上释放的信息素Q / 路径长度
 
-extern float ALPHA;
-extern float BETA;
-extern float RHO;
-extern float Q;
-extern int MAX_GEN;
-extern int ant_num;
-extern int top_height;  
-extern int top_distance;  
-extern int thread_num;
-extern std::vector<std::vector<int>> all_way;
+extern const double ALPHA;
+extern const double BETA;
+extern const double C;
+extern const double RHO;
+extern const double Q;
+extern const int MAX_GEN;
+extern const int ant_num; 
+extern const int top_height;
+extern const int low_height;
+extern const int top_distance;  
+extern const int thread_num;
+extern double meanWeight;
+extern const int segment_num;
+extern const double PI;
+extern std::unordered_set<int> segment_max;
+extern std::vector<int> label;
 extern std::vector<double> total_way;
 
 extern int city_num;
