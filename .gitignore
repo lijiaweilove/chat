@@ -2,8 +2,4 @@
 /test01
 /ClientSeckey/.vs
 /ServerSeckey/.vs
-/BlockTable/x64/Debug
 /BlockTable/.vs/BlockTable
-*.ncb
-/BlockTable/BlockTable.sln
-/BlockTable/BlockTable.suo
